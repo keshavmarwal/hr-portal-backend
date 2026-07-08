@@ -178,8 +178,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Trust Render's proxy for HTTPS redirects
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-CSRF_TRUSTED_ORIGINS = config(
-    'CSRF_TRUSTED_ORIGINS',
-    default='https://*.onrender.com',
-    cast=Csv()
-)
+CSRF_TRUSTED_ORIGINS = [
+    "https://hr-portal-backend-wej7.onrender.com",
+    "http://localhost:5173",
+]

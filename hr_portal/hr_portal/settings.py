@@ -31,7 +31,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = config(
     'ALLOWED_HOSTS',
-    default='.onrender.com,localhost,127.0.0.1',
+    default='hr-portal-backend-wej7.onrender.com,localhost,127.0.0.1',
     cast=Csv()
 )
 
